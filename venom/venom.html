@@ -1,0 +1,1181 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="utf-8">
+    <script src="sweetalert2.all.min.js"></script>
+    <meta property="og:title" content="Melhor site de métodos e APIs">
+    <meta property="og:image" content="images/023b733db147076bb4d24.jpg">
+    <title>Black venom bot</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   
+    
+    <meta content="Venom Web Site" name="keywords">
+    <meta content="By Venom Mods" name="description">
+    <link rel="stylesheet" href="css/all.css" crossorigin="anonymous">    
+    <!-- Favicon -->
+<st
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;family=Roboto:wght@500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Icon Font Stylesheet -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+<!-- Basic stylesheet -->
+   <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+ <!-- Default Theme -->
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+
+    <link href="css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+   
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --clr: #222327;
+}
+
+
+.navigation {
+  width: 400px;
+  height: 70px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  z-index: 999;
+}
+
+.navigation ul {
+  display: flex;
+  width: 350px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: #E41B17;
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: #E41B17;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.indicator {
+  position: absolute;
+  top: -50%;
+  width: 55px;
+  height: 55px;
+  background: #07D2B7;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.5s;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 var(--clr);
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0 var(--clr);
+}
+
+.navigation ul li:nth-child(1).active~.indicator {
+  transform: translateX(calc(70px*0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+  transform: translateX(calc(70px*1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+  transform: translateX(calc(70px*2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+  transform: translateX(calc(70px*3));
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+  transform: translateX(calc(70px*4));
+}
+
+
+
+.content{
+       background: url(hh.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'Barlow', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.oii{
+background: rgba(000,000,000 , 0.7);
+}
+.mb-2{
+color: white;
+}
+.im{
+color: white;
+}
+.he{
+color: #07e8d9;
+
+}
+.hg{
+text-align: right;
+}
+img{
+  width: 120px;
+  height: 200px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+      </style>
+
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Carregando...</span>
+
+         
+            </div>
+            
+                    
+                      
+        </div>
+        <!-- Spinner End-->
+
+
+        <!-- Sidebar aqui -->
+        <!-- Sidebar Start -->
+            
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>black Venom </h3>
+                    
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+<img class="rounded-circle" src="images/bf635a74f7cbf75f44a27.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">black Venom Apis</h6>
+                        <span>spribe</span>
+                    </div>
+                </div>
+                               
+                
+                <div class="navbar-nav w-100">
+
+<div>
+
+<div>
+                                        <div class="nav-item dropdown">
+                        <a href="https://wa.link/elm22r" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-style: italic;"><i class="fa fa-user"></i>user</a>
+                        <hr>
+
+                         <div class="user-content" id="userContent">
+                           <div class="user-header">
+                             <p>Bem-vindo, <span id="loggedInUsername"></span>!</p>
+                             <button onclick="sair()">Sair</button>
+                        
+                           </div>
+                        
+                  
+                </div>
+        </div>
+    </div>
+    </div>
+    </div></nav>
+    </div>
+    <!-- Sidebar End -->
+
+
+    <!-- Content Start -->
+    <div class="content">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+            <a href="#" class="sidebar-toggler flex-shrink-0">
+                                <ion-icon name="apps-sharp"></ion-icon>
+            </a>
+            <div class="central">
+                <h3 class="" align="center">Venom Apis<i class="" align="center"></i></h3>
+            </div>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+<ion-icon name="alert-circle-sharp"></ion-icon>  <span class="d-none d-lg-inline-flex">notificação</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                    
+&lt;<a href="https://wa.link/elm22r" class="dropdown-item">
+  <h6 class="fw-normal mb-0"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Aproveite 💜!</h6>
+  <small class="im">a oportunidade que ta batendo a sua porta</small>
+</a>
+
+<a href="https://wa.link/elm22r" class="dropdown-item">
+  <h6 class="fw-normal mb-0"><i class="fa fa-youtube" aria-hidden="true"></i> 100% confiavel </h6>
+  <small class="im"> ti prometemos faturar 💜 </small>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=+258868303756&text=%99💎👾Grmatrix" class="dropdown-item">
+  <h6 class="fw-normal mb-0"><i class="fa fa-youtube" aria-hidden="true"></i> se ta com duvidas!</h6>
+  <small class="im">contacte o suporte 💜 </small>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=+258868303756&text=%99💎👾Grmatrix" class="dropdown-item">
+  <h6 class="fw-normal mb-0"><i class="fa fa-whatsapp" aria-hidden="true"></i> suporte </h6>
+  <small class="im"> clicar💜 </small>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=+258868303756&text=%99💎👾Grmatrix" class="dropdown-item">
+  <h6 class="fw-normal mb-0"><i class="fa fa-telegram" aria-hidden="true"></i> whatsapp</h6>
+  <small class="im"> Chama ai 💜</small>
+</a>
+
+<a href="#" class="dropdown-item">
+  <h6 class="fw-normal mb-0"><i class="fa fa-instagram" aria-hidden="true"></i> grupo</h6>
+  <small class="im"> bem vindo💜</small>
+</a>
+                                
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    
+                  <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0"> 
+                  <a href="#" class="dropdown-item">My Profile</a>
+                  <a href="#" class="dropdown-item">Settings</a> 
+                 <a href="#" class="dropdown-item">Log Out</a>
+                   </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Footer Start -->
+  
+
+
+            
+            <div class="container-fluid pt-4 px-4" align="center">
+
+
+<div class="ba">
+    <div class="baum">
+    <br>
+      <h6 class="mb-0">
+      main
+ <div class="testimonial-item text-center"><br>
+    <img class="img-fluid rounded-circle mx-auto mb-4" src="images/73029040f9bac0590f1a8.jpg" style="width: 100px; height: 100px;">
+    <h5 class="mb-1">DESENVOLVIDO POR:</h5>
+    <p>Agência Black apis</p>
+
+    <p><h6>vamos falir o cassino</h6> <br>
+    </p>
+    <hr>
+    
+                <button onclick="window.location.href='../bots/robôs.html'" class="btn btn-outline-primary" style="background-color: #8A2BE2; color: white;">continuar</button>
+    <hr>
+    <div class="icons-container" align="start">
+    <a href="#" class="icon">
+<ion-icon name="person-circle-outline"></ion-icon>
+    </a>
+    <a href="perfil.html">editar perfil</a>
+    <a href="#" class="icon">
+    <i class="#" width="10px"></i>
+    </a><br><br>
+    </div>
+</div>
+ </h6></div>
+</div><br>
+  <div class="navigation">
+    <ul>
+      <li class="list active">
+        <a href="#"><span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="perfil.html"><span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <span class="text">Profile</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="#"><span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+          <span class="text">Massage</span>
+        </a>
+      </li>
+
+
+      <li class="list">
+        <a href="../bots/robôs.html"><span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
+          <span class="text">bots</span>
+        </a>
+      </li>
+
+      <li class="list">
+        <a href="#" id="openNav"><span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+          <span class="text">Settings</span>
+        </a>
+      </li>
+      <div class="indicator">
+
+      </div>
+    </ul>
+  </div>
+        
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+<ion-icon name="people-outline"></ion-icon>
+                            <div class="ms-3">
+                                <p class="mb-2">USÚARIOS🍀</p>
+                                <h6 id="online-users" class="mb-0"></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+<ion-icon name="earth-sharp"></ion-icon>
+                            <div class="ms-3">
+                                <p class="mb-2">banco</p>
+<!-- Código do crachá - Não altere o código -->
+<h6 class="mb-0">
+<b class="hitCounter" href="https://visitorsitcouter.com/" target="_blank" title="Hit counter" data-name="059339c9a1780e2b4d64ac9d58d1b14c|9|external|1|#ff0000|#ffffff|small|s-hit">...</b><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script><script type="text/javascript" src="js/hitCounter.js"></script>
+</h6>
+<!-- O código do crachá termina aqui -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+                          <ion-icon name="key-sharp"></ion-icon>
+                            <div class="ms-3">
+                                <p class="mb-2">API</p>
+                                <h6 class="mb-0">ght-34df35fgt35gf</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+<ion-icon name="bug-sharp"></ion-icon>
+                            <div class="ms-3">
+                                <p class="mb-2">ERROS</p>
+                                <h6 class="mb-0">0</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+<div class="col-sm-6 col-xl-3">
+    <div class="oii rounded d-flex flex-column align-items-center justify-content-between p-4">
+        <h6 class="mb-2">estratégia 100% de acertividade 2x/3x</h6>
+        <div class="m-n2">
+            
+            <button onclick="window.location.href='https://renda-extra-mentoria-blackv.vercel.app/'" class="btn btn-outline-primary" style="background-color: #8A2BE2; color: white;">quero </button>
+        </div>
+    </div>
+</div>
+                    
+<div class="col-sm-6 col-xl-3">
+    <div class="oii rounded d-flex flex-column align-items-center justify-content-between p-4">
+        <h6 class="mb-2">𝕔𝕝𝕚𝕔𝕒 𝕟𝕠 button 𝕒𝕓𝕒𝕚𝕩𝕠 𝕡𝕒𝕣𝕒 𝕠𝕡𝕖𝕣𝕒𝕣 </h6>
+        <div class="m-n2">
+            
+            <button onclick="window.location.href='../bots/robôs.html'" class="btn btn-outline-primary" style="background-color: #8A2BE2; color: white;">continuar</button>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-6 col-xl-3">
+    <div class="oii rounded d-flex flex-column align-items-center justify-content-between p-4">
+        <h6 class="mb-2">𝕠 𝕤𝕚𝕥𝕖 𝕗𝕠𝕚 𝕕𝕖𝕤𝕖𝕟𝕧𝕠𝕝𝕧𝕚𝕕𝕠 𝕡𝕠𝕣 𝔾𝕣𝕞𝕒𝕥𝕣𝕚𝕩 𝕖 𝕄𝕣𝕓𝕝𝕒𝕔𝕜</h6>
+        <div class="m-n2">
+            <button onclick="window.location.href='../bots/robôs.html'" class="btn btn-outline-primary" style="background-color: #8A2BE2; color: white;">continuar</button>
+        </div>
+    </div>
+</div>
+  
+<div id="settingsNav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
+  <a href="#" onclick="s()">Sobre <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brilliance" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16M1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7" />
+  </svg></a>
+  <a href="https://wf35h6.mimo.run/index.html">revendedor <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app-indicator" viewBox="0 0 16 16">
+    <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1z" />
+    <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+  </svg></a>
+  <a href="perfil.html">perfil <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+  </svg></a>
+  <a href="#" onclick="t()">Fundo <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-alt-high-fill" viewBox="0 0 16 16">
+    <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5m-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4" />
+  </svg></a>
+ <a href="https://tslswx.mimo.run/index.html">Chat real <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots-fill" viewBox="0 0 16 16">
+   <path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+ </svg></a>
+ <a href="https://gr1wn3.mimo.run/index.html">notificação <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+   <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+ </svg></a>
+</div>
+<script>
+function verificarRequ6ss() {
+    var chave = document.getElementById('chaveInput').value;
+    window.location.href = `/api/verificadr/requess?key=${chave}`;
+}
+function gerarChav() {
+    var total = document.getElementById('chaveix').value;
+    window.location.href = `/api/pegameto/px?valor=${total}`;
+}
+</script>
+
+
+<h3 class="mb-0"><audio autoplay=""> <!--agora com autoplay e sem controls-->
+<source src="media/bca653f19520eebfe9dfc.mp4" type="audio/mp4">
+<source src="media/bca653f19520eebfe9dfc.mp4" type="audio/mp4">
+</audio></h3>
+<!--<div class="ba">
+   <div class="baum">
+      <h6 class="mb-0">
+ <h6 class="mb-0">
+<p>~ Novidades ~</p>
+<hr>
+<h6>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Consultas adicionada! <i class="fa fa-excla mation-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 07/03/204 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Conselhos adicionados! <i class="fa fa-exclamati on-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 07/03/24 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i>Instagram download adicionado! <i class="fa fa-exclamation -triangle" aria-hidden="true"></i></h6>
+<small class="im"> 07/03/24 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Pinterest download adicionado! <i class="fa fa-exclamatio n-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 07/03/24 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Tiktok download adicionado! <i class="fa fa-exclamat ion-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 07/03/24 </small>
+</h6>
+
+    </h6>
+  </div>
+</div>
+--->
+  <style>
+   marquee{
+     color:red;
+   }
+
+#clock {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    color: rgba(138, 43, 226, 0.8); /* Cor do texto violeta */
+    background: rgba(000,000,000 , 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+  </style>
+
+  <div id="clock">07:11:37</div>
+
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var seconds = now.getSeconds().toString().padStart(2, '0');
+      var timeString = hours + ":" + minutes + ":" + seconds;
+      document.getElementById("clock").textContent = timeString;
+    }
+
+    setInterval(updateTime, 1000); // Atualiza o relógio a cada segundo
+    updateTime(); // Chama updateTime() uma vez para exibir o tempo atual imediatamente
+  </script>
+
+	<br>
+
+
+</center>
+
+ <img src="https://i.ibb.co/J2Q4B9b/site-seguro-logo-768x284.png" width="500" height="300">
+  
+<div class="ba">
+    <div class="baum">
+      <h6 class="mb-0">
+
+<p>© <a href="#">black Venom site </a>, by aviator spribe.</p></h6></div>
+</div>
+
+</div>
+
+
+
+
+ </div>
+</div><br>
+
+
+
+
+                </div>
+            
+
+        <!-- Footer End -->
+        <!-- Footer End -->
+
+    
+    <!-- Content End -->
+
+
+    <!-- Back to Top -->
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+        
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
+
+
+
+
+.ba{
+background: rgba(000,000,000 , 0.7);
+border-radius: 5px;
+}
+.ba hr{
+color: white;
+}
+.baum{
+margin: 10px;
+}
+.icons-container{
+
+}
+.bah{
+color: #07e8d9;
+}
+.col-12{
+color: #fff;
+}
+
+        .container:after {
+            background-color:#EB1616
+            content: "";
+            height: 10px;
+            position: absolute;
+            top: 390px;
+            width: 100%;
+        }
+
+        .container:hove {
+            transform: scale(0.54);
+        }
+
+        .container-inner {
+            clip-path: path("M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+                );
+            position: relative;
+            transform-origin: 50%;
+            top: -200px;
+        }
+
+        .icon {
+    margin-right: 30px;
+    position: position-fixed;
+  }
+        .fa-whatsapp {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+        .fa-user {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+         .fa-key {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+        
+                 .fa-eye{
+                   animation: flutuacao 3s ease-in-out infinite;
+                 }
+                 
+        
+       @keyframes flutuacao {
+       0%, 100%{
+         transform: translateY(-0px);
+    }
+        50% {
+        transform: translateY(-10px);
+    } 
+    }
+
+        .central {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+        }
+
+        .padding {
+            margin-top: 35px;
+            font-size: medium;
+        }
+
+        h6 {
+            font-family: 'Prompt', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+
+        h3 {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .fa-money {
+
+            color: #089785;
+        }
+  </style>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100&amp;family=Roboto:ital,wght@1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&amp;family=Roboto:ital,wght@1,700&amp;display=swap" rel="stylesheet">
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+  <script src="js/sweetalert.min.js"></script>
+  <style>
+    /* Estilos para tornar o pop-up com fundo preto transparente */
+    .swal-overlay {
+      background-color: rgba(0, 0, 0, 0.5) !important; /* Define a cor de fundo como preto com transparência */
+    }
+
+    /* Reduzir o tamanho do texto */
+    .swal-title,
+    .swal-text,
+    .swal-footer {
+      font-size: 10px !important; /* Ajusta o tamanho da fonte do texto */
+      color: black // rgba(138, 43, 226, 0.8) !important; /* Define a cor do texto como violeta escuro */
+    }
+
+    /* Define a cor de fundo do HTML como vermelho */
+  
+
+    /* Estilos para tornar o pop-up com borda transparente */
+    .swal-modal {
+      background-image: ("https://telegra.ph/file/ab9ec9be17035d8c1b0d3.jpg");
+      border: 2px solid rgba(138, 43, 226, 0.8) !important; /* Define a borda com transparência */
+      border-radius: 10px; /* Adiciona bordas arredondadas */
+      width: 250px !important; /* Reduz a largura do pop-up */
+      height: 250px !important; /* Reduz a altura do pop-up */
+    }
+
+    /* Estilos para a imagem */
+    .swal-content img {
+      max-width: 30%;
+      max-height: 30%;
+      width: auto !important;
+      height: auto !important;
+      margin: auto;
+      display: block;
+      border-radius: 9px; /* Adiciona bordas arredondadas à imagem */
+    }
+
+    /* Estilos para o botão */
+    .swal-button {
+      background-color: rgba(138, 43, 226, 0.8) !important; /* Define a cor de fundo do botão como violeta escuro */
+      color: #fff !important; /* Define a cor do texto do botão como branco */
+    }
+    .pull-right{
+  float:right;
+}
+.pull-left{
+  float:left;
+}
+h5{
+  color:green;
+}
+
+iframe{
+  border-radius:30px;
+animation: book-animation 2s infinite;
+}
+        
+            
+            
+        }
+iframe {
+    /* ... */
+    animation: book-animation 2s infinite, fade-animation 3s ease-in-out;
+}
+@keyframes fade-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 5;
+    }
+}
+        
+        @keyframes book-animation {
+            0% {
+                box-shadow: 0 0 20px red;
+            }
+            50% {
+                box-shadow: 0 0 20px #4CAF50;
+            }
+            100% {
+                box-shadow: 0 0 20px 
+                rgb(207,28,204);
+            }
+.spinne {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ccc;
+            border-top-color: #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .loading-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #f5f5f5;
+            position: absolute;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+.loading-screen img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+a {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-image: url(https://i.ibb.co/jhgFhNv/20240126-204056.png);
+  background-size: cover;
+}
+
+  
+}
+
+a:hove {
+  background-color: green;
+  border-radius: 30px;
+}
+  </style>
+<style>
+.carousel {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel img {
+  width: 300px;
+  height: 200px;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel .arrow.left {
+  left: 10px;
+}
+
+.carousel .arrow.right {
+  right: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+#carousel{
+  background-color: green;
+  font-size: 40px;
+  border-radius: 30px;
+}
+</style>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.carousel img');
+
+  function showSlide(slideIndex) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[slideIndex].classList.add('active');
+  }
+
+  function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= slides.length) {
+      currentSlide = 0;
+    }
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide--;
+    if (currentSlide < 0) {
+      currentSlide = slides.length - 1;
+    }
+    showSlide(currentSlide);
+  }
+
+  showSlide(currentSlide);
+</script>
+<script>
+function verificarRequests() {
+   var chave = document.getElementById('chaveRequests').value;
+    
+    // Fazendo uma requisição AJAX para o endpoint
+    fetch(`/api/verificador/requests?key=${chave}`)
+    .then(response => response.json())
+    .then(data => {
+        // Verifica o status retornado pelo servidor
+        if (data.status === 'Apikey ativa ✓') {
+            // Se a chave estiver ativa, exibe os detalhes no pop-up
+            Swal.fire({
+                title: 'Key ativa!',
+                html: `Sua Key: ${data.sua_key}<br>
+                       Total de Requests: ${data.total_requests}`,
+                icon: 'success',
+                showCloseButton: true,
+                showConfirmButton: false,
+                timer: 3000
+            });
+        } else {
+            // Se a chave não estiver ativa, exibe uma mensagem de erro
+            Swal.fire({
+                title: 'Key inválida!',
+                text: data.mensagem,
+                icon: 'error'
+            });
+        }
+    })
+    .catch(error => {
+        console.error('Erro ao fazer a requisição:', error);
+        // Exibindo um pop-up de erro se algo der errado
+        Swal.fire({
+            title: 'Erro',
+            text: 'Ocorreu um erro ao processar a solicitação.',
+            icon: 'error'
+        });
+    });
+}
+  // Função para exibir o pop-up quando a página for totalmente carregada
+  window.onload = function() {
+    swal({
+      title: 'Bem Vindo(a) ao black venom web apis ❤️',
+      text: 'os melhores',
+      content: {
+        element: "img",
+        attributes: {
+          src: "https://telegra.ph/file/ab9ec9be17035d8c1b0d3.jpg"
+        }
+      },
+      footer: 'Espero que goste',
+      buttons: {
+        confirm: {
+          text: "OK",
+          value: true,
+          visible: true,
+          className: "Kskks",
+          closeModal: true
+        }
+      },
+      closeOnClickOutside: false // Impede que o pop-up seja fechado ao clicar fora dele
+    });
+  };
+</script>
+<script>
+  <script>
+    const list = document.querySelectorAll('.list');
+  
+    function activeLink() {
+      list.forEach((item) => item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) => item.addEventListener('click', activeLink));
+  </script>
+  <script>
+    document.getElementById("openNav").addEventListener("click", function() {
+      document.getElementById("settingsNav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    });
+    
+    document.getElementById("closeNav").addEventListener("click", function() {
+      document.getElementById("settingsNav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    });
+    
+    document.getElementById("changeColor").addEventListener("click", function() {
+      let colors = ['#FF6347', '#66CDAA', '#9370DB', '#FFD700', '#FFA07A'];
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.getElementById("main").style.backgroundColor = randomColor;
+    });
+  </script>
+</script>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+   <script src="assets/owl-carousel/owl.carousel.js"></script>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-timezone.min.js"></script>
+    <script src="js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script module src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+<script>
+  const list = document.querySelectorAll('.list');
+
+  function activeLink() {
+    list.forEach((item) => item.classList.remove('active'));
+    this.classList.add('active');
+  }
+  list.forEach((item) => item.addEventListener('click', activeLink));
+ 
+ 
+</script>
+<script>
+  function sair() {
+    window.Location.href ="login.html"
+    alert('sair...')
+  }
+  
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script module src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+<script>
+  function _0x416b(){const _0x1395ca=['https://login-database-black-default-rtdb.firebaseio.com','144183FAgKpY','2563434wdFeEr','64lddHxj','258SltHtd','login-database-black.firebaseapp.com','5442935lRsZBH','9SYhspB','2956552GLjSAT','1377331pmkvgC','log','login-database-black','Olá\x20mundo!','initializeApp','193354FUhOue','login-database-black.appspot.com','54057070uJDniL','AIzaSyB5v0e77dvzHINhHzCKeMs6QPjqo7Z7img'];_0x416b=function(){return _0x1395ca;};return _0x416b();}const _0x5c61dd=_0x2009;(function(_0x391071,_0x28ef8b){const _0x317c06=_0x2009,_0x243a02=_0x391071();while(!![]){try{const _0x138310=-parseInt(_0x317c06(0x146))/0x1+-parseInt(_0x317c06(0x151))/0x2+-parseInt(_0x317c06(0x150))/0x3*(-parseInt(_0x317c06(0x152))/0x4)+-parseInt(_0x317c06(0x155))/0x5+parseInt(_0x317c06(0x153))/0x6*(-parseInt(_0x317c06(0x14b))/0x7)+-parseInt(_0x317c06(0x157))/0x8*(parseInt(_0x317c06(0x156))/0x9)+parseInt(_0x317c06(0x14d))/0xa;if(_0x138310===_0x28ef8b)break;else _0x243a02['push'](_0x243a02['shift']());}catch(_0x324187){_0x243a02['push'](_0x243a02['shift']());}}}(_0x416b,0xd4565));function _0x2009(_0x517ab2,_0x53e769){const _0x416b50=_0x416b();return _0x2009=function(_0x2009d0,_0x10ba59){_0x2009d0=_0x2009d0-0x146;let _0x33ceec=_0x416b50[_0x2009d0];return _0x33ceec;},_0x2009(_0x517ab2,_0x53e769);}function hi(){const _0x795f05=_0x2009;console[_0x795f05(0x147)](_0x795f05(0x149));}hi();const firebaseConfig={'apiKey':_0x5c61dd(0x14e),'authDomain':_0x5c61dd(0x154),'databaseURL':_0x5c61dd(0x14f),'projectId':_0x5c61dd(0x148),'storageBucket':_0x5c61dd(0x14c),'messagingSenderId':'768021690283','appId':'1:768021690283:web:221e866026541faffa04ee'};firebase[_0x5c61dd(0x14a)](firebaseConfig);
+</script>
+<script>
+  // Verifica se o usuário está autenticado ao carregar a página
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    //Usuário está logado, permanece na tela
+    console.log("Usuário logado!");
+  }
+
+
+  else {
+    Swal.fire({
+      icon: "error",
+      title: "usuário não encontrado",
+      text: "suspeito⚠️  tens que estar logado para ter acesso a essa tela!",
+      footer: '<a href="#">black venom</a>',
+    });
+    //Usuário não está logado, redireciona para index.html
+    console.log("Usuário não logado! Redirecionando...");
+    window.location.replace("../login.html");
+
+  }
+});
+</script>
+<script>
+  function gerarNumeroAleatorio() {
+    return Math.floor(Math.random() * 100) + 1;
+  }
+  
+  // Função para atualizar o número de usuários online
+  function atualizarUsuariosOnline() {
+    const numeroUsuarios = gerarNumeroAleatorio();
+    document.getElementById("online-users").textContent = numeroUsuarios;
+  }
+  
+  // Efeito de entrada
+
+  setTimeout(() => {
+    
+    document.body.style.opacity = 1;
+    atualizarUsuariosOnline();
+  }, 1000);
+  
+  function t(){
+    alert('opção indisponível 🤕')
+  }
+  function s(){
+    alert('indisponível 🚫')
+  }
+</script>
+</html>

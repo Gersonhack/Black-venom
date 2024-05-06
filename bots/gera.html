@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="en"><head>
+
+
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venom gerador</title>
+    <meta charset="UTF-8">
+    
+   
+     <link rel="stylesheet" type="text/css" href="indexs.css">
+     
+</head>
+<body>
+
+        <div class="form-select">
+          <center>
+          <img src="ico.jpg">
+            <p>Escolha a sua Casa de Apostas</p><p>
+            <select>
+                <option>elphant Bet</option>
+                <option>888 Bet</option>
+                <option>JOGA Bet</option>
+                <option>OLÁ. Bet</option>
+                <option>Bet way</option>
+                <option>Bet ika</option>
+                <option>Pla  card</option>
+            </select>
+            
+            </p><p>Selecione o Número de Previsões</p>
+            <select id="selectNumber">
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+            </select>
+            
+            <div class="btn-math">
+                <button class="btn" type="button" id="btnAdicionar">Gerar</button>
+            </div>
+           
+            <p style="text-align: center;">_____________Resultados da Busca_____________</p>
+            <ul id="lista2"></ul>
+            
+            <p style="text-align: center;">________Conjunção de Dados Semanais________</p>
+            <ul id="lista1"></ul>
+
+            <!-- Botão de Logout -->
+           
+        </div>
+
+        <!-- Importar o arquivo JavaScript -->
+
+
+
+        <script>
+          console.log('iniciado');
+console.log('finalizado');
+
+var clickCount = 0;
+        var horasLista2 = [];
+
+        // Fun para adicionar um novo itemlista 1
+        function adicionarItem() {
+        var selectNumber = document.getElementById("selectNumber");
+        var numRepeticoes = parseInt(selectNumber.value);
+
+        var lista1 = document.getElementById("lista1");
+        var lista2 = document.getElementById("lista2");
+
+        lista1.innerHTML = ""; // Limpar lista1
+        if (lista2.firstChild) {
+            // Limpar lista2 se estiver vazia
+            
+        }
+
+        var horarios = [];
+
+        if (isNaN(numRepeticoes) || numRepeticoes === 0) {
+            // Gerar 40 itens aleaios com cores alearias
+            for (var i = 0; i < 40; i++) {
+            var hora = gerarHoraAleatoria();
+            var cor = gerarCorAleatoria();
+
+            var li = document.createElement("li");
+            li.classList.add("custom");
+            li.style.backgroundColor = cor;
+            li.appendChild(document.createTextNode(hora));
+            lista1.appendChild(li);
+
+            horarios.push(hora);
+            }
+        } else {
+            // Gerar itens com base no valor fornecido pelo usuário
+            for (var j = 0; j < numRepeticoes; j++) {
+            var hora = gerarHoraAleatoria();
+            var cor = gerarCorAleatoria();
+
+            var li = document.createElement("li");
+            li.classList.add("custom");
+            li.style.backgroundColor = cor;
+            li.appendChild(document.createTextNode(hora));
+            lista1.appendChild(li);
+
+            horarios.push(hora);
+            }
+        }
+
+        // Ordenar horios de forma crescente
+        horarios.sort();
+        var horaAtual = new Date();
+        var horaAtualCentralizada = horaAtual.getHours(); 
+        var minutoAtual = horaAtual.getMinutes(); // Obt minuto atual
+        var segundoAtual = horaAtual.getSeconds(); // Obt
+        if (clickCount % 40 === 0) {
+            var novaHoraLista2 = gerarHoraLista2(
+            horaAtualCentralizada,
+            minutoAtual,
+            segundoAtual
+            );
+
+            if (
+            horaMaiorOuIgual(horaAtualCentralizada, minutoAtual, segundoAtual, novaHoraLista2)
+            ) {
+            horasLista2.push(novaHoraLista2);
+
+            var li = document.createElement("li");
+            li.classList.add("pinkbackground");
+            li.appendChild(document.createTextNode(novaHoraLista2));
+            lista2.appendChild(li);
+            }
+        }
+
+        clickCount++;
+        }
+
+        
+        function horaMaiorOuIgual(horaAtual, minutoAtual, segundoAtual, hora) {
+        var horaSeparada = hora.split(":");
+        var horaLista2 = parseInt(horaSeparada[0]);
+        var minutoLista2 = parseInt(horaSeparada[1]);
+        var segundoLista2 = parseInt(horaSeparada[2]);
+
+        return (
+            horaLista2 > horaAtual ||
+            (horaLista2 === horaAtual &&
+            (minutoLista2 > minutoAtual))
+        );
+        }
+
+        
+        function gerarHoraAleatoria() {
+        var hora = Math.floor(Math.random() * 24);
+        var minuto = Math.floor(Math.random() * 60);
+        var segundo = Math.floor(Math.random() * 60);
+
+        hora = hora < 10 ? "0" + hora : hora;
+        minuto = minuto < 10 ? "0" + minuto : minuto;
+        segundo = segundo < 10 ? "0" + segundo : segundo;
+
+        return hora + ":" + minuto + ":" + segundo;
+        }
+
+        
+        function gerarCorAleatoria() {
+        var cores = ["#81007f", "#3289ba", "#7b41c7"];
+        var corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+
+        return corAleatoria;
+        }
+
+       
+        function gerarHoraLista2(horaAtualCentralizada, minutoAtual, segundoAtual) {
+        var hora = horaAtualCentralizada;
+        var minuto = Math.floor(Math.random() * (60 - minutoAtual)) + minutoAtual;
+        var segundo = Math.floor(Math.random() * 60);
+
+        var horaFormatada = hora < 10 ? "0" + hora : hora;
+        var minutoFormatado = minuto < 10 ? "0" + minuto : minuto;
+        var segundoFormatado = segundo < 10 ? "0" + segundo : segundo;
+
+        return horaFormatada + ":" + minutoFormatado + ":" + segundoFormatado;
+        }
+
+
+        var btnAdicionar = document.getElementById("btnAdicionar");
+        btnAdicionar.addEventListener("click", adicionarItem);
+
+        </script>
+        
+
+    </div>
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+<script>
+  function _0x416b(){const _0x1395ca=['https://login-database-black-default-rtdb.firebaseio.com','144183FAgKpY','2563434wdFeEr','64lddHxj','258SltHtd','login-database-black.firebaseapp.com','5442935lRsZBH','9SYhspB','2956552GLjSAT','1377331pmkvgC','log','login-database-black','Olá\x20mundo!','initializeApp','193354FUhOue','login-database-black.appspot.com','54057070uJDniL','AIzaSyB5v0e77dvzHINhHzCKeMs6QPjqo7Z7img'];_0x416b=function(){return _0x1395ca;};return _0x416b();}const _0x5c61dd=_0x2009;(function(_0x391071,_0x28ef8b){const _0x317c06=_0x2009,_0x243a02=_0x391071();while(!![]){try{const _0x138310=-parseInt(_0x317c06(0x146))/0x1+-parseInt(_0x317c06(0x151))/0x2+-parseInt(_0x317c06(0x150))/0x3*(-parseInt(_0x317c06(0x152))/0x4)+-parseInt(_0x317c06(0x155))/0x5+parseInt(_0x317c06(0x153))/0x6*(-parseInt(_0x317c06(0x14b))/0x7)+-parseInt(_0x317c06(0x157))/0x8*(parseInt(_0x317c06(0x156))/0x9)+parseInt(_0x317c06(0x14d))/0xa;if(_0x138310===_0x28ef8b)break;else _0x243a02['push'](_0x243a02['shift']());}catch(_0x324187){_0x243a02['push'](_0x243a02['shift']());}}}(_0x416b,0xd4565));function _0x2009(_0x517ab2,_0x53e769){const _0x416b50=_0x416b();return _0x2009=function(_0x2009d0,_0x10ba59){_0x2009d0=_0x2009d0-0x146;let _0x33ceec=_0x416b50[_0x2009d0];return _0x33ceec;},_0x2009(_0x517ab2,_0x53e769);}function hi(){const _0x795f05=_0x2009;console[_0x795f05(0x147)](_0x795f05(0x149));}hi();const firebaseConfig={'apiKey':_0x5c61dd(0x14e),'authDomain':_0x5c61dd(0x154),'databaseURL':_0x5c61dd(0x14f),'projectId':_0x5c61dd(0x148),'storageBucket':_0x5c61dd(0x14c),'messagingSenderId':'768021690283','appId':'1:768021690283:web:221e866026541faffa04ee'};firebase[_0x5c61dd(0x14a)](firebaseConfig);
+</script>
+
+<script>
+  // Verifica se o usuário está autenticado ao carregar a página
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      //Usuário está logado, permanece na tela
+      console.log("Usuário logado!");
+    }
+
+
+    else {
+      //Usuário não está logado, redireciona para index.html
+      console.log("Usuário não logado! Redirecionando...");
+      window.location.replace("../index.html");
+
+    }
+
+  });
+</script>
+
+</body></html>

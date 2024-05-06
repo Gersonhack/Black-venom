@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: royalblue;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.background {
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.loginbox {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  z-index: 4;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+.background.show {
+  opacity: 0.3;
+}
+
+.loginbox.show {
+  transform: scale(1)
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-size: 25px;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+main {
+  margin: 10px auto;
+}
+
+.email {
+  margin-bottom: 10px;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.email span,
+.password span {
+  color: royalblue;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.email input,
+.password input {
+  border: 2px solid lightgray;
+  outline: none;
+  background-color: lightgray;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.email input:focus,
+.password input:focus {
+  border-color: royalblue;
+}
+
+.noacc {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.noacc a {
+  text-decoration: none;
+  color: white;
+  background-color: darkred;
+  padding: 3px 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.noacc a:hover {
+  color: royalblue;
+  background-color: lightgray;
+}
+
+footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.loginbox button {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.loginbox button:hover {
+  color: royalblue;
+  background-color: red;
+  transform: scale(1.08)
+}
+
+.showform {
+  position: fixed;
+  background-color: red;
+  color: royalblue;
+  z-index: 5;
+  color:white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hide {
+  transform: scale(0)
+}
+img{
+  height: 100px;
+  width:100px;
+  border-radius:50px;
+}
+  </style>
+  <title>Login </title>
+</head>
+
+<body>
+  <button class="showform">painel Adm</button>
+  
+  <div class="background"></div>
+  <div class="loginbox">
+    <header>
+      <span class="title">painel registro</span>
+   
+      <span class="close">X</span>
+     
+        
+    </header>
+    <main>
+      <center>
+       <img src="nov.jpg">
+      <div class="email">
+        <span></span>
+        <input type="email" placeholder="email..." required>
+      </div>
+      <div class="password">
+        <span></span>
+        <input type="password" placeholder="password..." required>
+      </div>
+      <hr>
+      <div class="noacc">
+        ©black venom <a href="">sair</a>
+        <hr>
+      </div>
+    </main>
+    <footer>
+      <button onclick="nova()">registar</button>
+    </footer>
+  </div>
+  <script>
+    const showbtn = document.querySelector('.showform')
+    bg = document.querySelector('.background')
+    login = document.querySelector('.loginbox')
+    close = document.querySelector('.close')
+    alert("Bem vindo ao painel adm crie sua conta  #black venom")
+    showbtn.addEventListener('click', (e) => {
+      showbtn.classList.add('hide')
+      bg.classList.add('show')
+      login.classList.add('show')
+    })
+    
+    close.addEventListener('click', (e) => {
+      bg.classList.remove('show')
+      login.classList.remove('show')
+      showbtn.classList.remove('hide')
+    })
+    function nova(){
+      alert('quase lá (◕‿◕)')
+      window.location.href="price.html"
+    }
+  </script>
+</body>
+
+<script >function logout() {
+firebase.auth().signOut().then(() => {
+window.location.href = "login.html";
+}).catch(() => {
+alert('Erro ao fazer logout');
+})
+}</script>
+</html>
+
+
+
